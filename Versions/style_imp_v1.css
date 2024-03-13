@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+	background-color: #141414;
+}
+
+h1 {
+/*    border: 2px #eee solid; */
+    color: brown;
+    text-align: center;
+    padding: 10px;
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+.headingcontainer{
+    text-align: center;
+    margin-top: 10px;
+    color: #00539CFF
+}
+
+.game-container{
+
+
+/*	text-align: center; */
+	width: 700px;
+    margin: auto;
+    margin-top: 21vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.alphabet{
+    margin: 12px;
+	width: 40px;
+    font-size: 36px;
+	font-weight: bold;
+    padding: 5px;
+    box-shadow: 1px 1px 3px 1px white;
+	background-color: white;
+}
+
+.guessletter{
+    margin: 12px;
+	width: 40px;
+    font-size: 36px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px 1px #eeeeee;
+	color: #eeeeee;
+	background-color: #585858;
+}
+
+.hintletter{
+    margin: 12px;
+	width: 40px;
+    font-size: 36px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px 1px #585858;
+	color: #585858;
+	background-color: #282828;
+}
+
+.wordletter {
+    width: 30px;
+    height: 30px;
+	border: none;
+	border-bottom: black solid 1px; 
+	padding: 10px;
+	margin-left: 15px;
+	margin-bottom: 50px;
+
+}
+
+.wordsection{
+
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lettersection{
+	align: left;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+	margin: auto;
+}
+
+.valuedigit{
+	display: contents;
+	font-family: Courier;
+	margin-right: 0px;
+	margin-top: 15px;
+    font-size: 12px;
+	font-weight: bold;
+	color: #aaaaaa;
+}
+
+.lettersection:hover{
+cursor : pointer;
+}
+
+.guessarea{
+	margin-top: 125px;
+    flex-wrap: wrap;
+	margin-left: 0px;
+/*    margin: auto; */
+}
+
+.guesssection{
+	margin-top: 85px;
+	display: inline-flex;
+    flex-wrap: wrap;
+	margin-left: 16px;
+	margin-right: 15px;
+	height: 75px;
+	border-bottom: solid 1px #585858;
+/*    margin: auto; */
+}
+
+.guessletter:hover{
+cursor : pointer;
+}
+
+.hintsection{
+	margin-top: 25px;
+	display: inline-flex;
+    flex-wrap: wrap;
+	margin-left: 16px;
+	margin-right: 15px;
+	height: 75px;
+	border-bottom: solid 1px #585858;
+/*    margin: auto; */
+}
+
+.bg{
+    background-color: red;
+    color: white;
+}
+
+.gameactions {
+	display: block;
+	margin-top: 10px;
+	margin-left: 15px;
+    margin-right: 15px;
+}
+
+.consolesection {
+	align: left;
+	color: white;
+    display: inline-flex;
+    flex-wrap: wrap;
+	margin: auto;
+}
+
+
+/* CSS */
+.button-clear {
+	float: left:
+	background-color: #fff;
+	border: 1px solid #d5d9d9;
+	border-radius: 8px;
+	box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+	box-sizing: border-box;
+	color: #0f1111;
+	cursor: pointer;
+	display: inline-block;
+//	font-family: "Amazon Ember",sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 29px;
+	padding: 0 10px 0 11px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+//	width: 100px;
+}
+
+.button-submit {
+	float:right;
+	background-color: #fff;
+	border: 1px solid #d5d9d9;
+	border-radius: 8px;
+	box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+	box-sizing: border-box;
+	color: #0f1111;
+	cursor: pointer;
+	display: inline-block;
+//	font-family: "Amazon Ember",sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 29px;
+	padding: 0 10px 0 11px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	vertical-align: middle;
+//	width: 100px;
+}
+
+.button-13:hover {
+  background-color: #f7fafa;
+}
+
+.button-13:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.gameover{
+    visibility: hidden;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -20vw;
+	margin-top: -15vh;
+	border: solid 1px;
+	padding: 10px;
+	width: 40vw;
+	background-color:#00539CFF;
+	height: 30vh;
+	text-align: center;
+	transition-duration: 0.5;
+	color: white;
+
+}
+
+.viewgameover{
+    visibility: visible;
+}
+
+.win{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20vw;
+    margin-top: -15vh;
+    border: solid 1px;
+    padding: 10px;
+    width: 40vw;
+    background-color:#00539CFF;
+    height: 30vh;
+    text-align: center;
+    transition-duration: 0.5;
+    color: white;
+
+}
+
+.viewwin{
+    visibility: visible;
+}
+
+.blurr{
+background-color: rgba(0, 0, 0, 0.4) ;
+}
+
+
+@media (max-width: 600px) {
+
+    .game-container{
+        margin-top: 5vh;
+        width: 100%;
+    }
+
+    .lettersection {
+        width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+//		height: 35px;
+    }
+
+	.lettersection:hover{
+		cursor : unset;
+	}
+	
+	.gameactions {
+		height: 30px;
+	}
+
+    .guesssection, .hintsection{
+        width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		height: 35px;
+		padding-bottom: 5px;
+    }
+
+
+    .wordletter, .alphabet, .guessletter, .hintletter {
+		float: left;
+        width: 32px;
+        margin-top: 5px;
+		margin-right: 4px;
+		margin-left: 4px;
+//		margin-right: 7px;
+		font-size: 29px !important;
+		height: 32px;
+		font-weight: bold;
+		padding: 1px;
+    }
+	
+	.guessletter:hover{
+		cursor : unset;
+	}
+
+	.valuedigit {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+
+    .wordletter{
+        width: 5px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        height: 20px;
+    }
+
+    .game-container{
+        margin-top: 3vh;
+    }
+
+    .alphabet{
+        font-size: 14px;
+    }
+
+    .wordletter{
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .win {
+        width : 70vw;
+        margin-left: -35vw;
+
+    }
+
+    .gameover{
+        width : 70vw;
+        margin-left: -35vw;
+    }
+
+    .wordsection {
+        margin-top: 40px;
+    }
+    
+    
+}

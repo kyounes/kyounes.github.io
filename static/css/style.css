@@ -1,0 +1,12 @@
+h1 {
+/*    border: 2px #eee solid; */
+    color: brown;
+    text-align: center;
+    padding: 10px;
+	font-size: 60px;
+	margin-top: 10px;
+}
+
+body {
+	background-color: #141414;
+}
